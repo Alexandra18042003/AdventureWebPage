@@ -1,0 +1,19 @@
+<div class="search">
+    <p>Search & Book all our destinations</p>
+
+    <div class="search-container">
+        <input class="input" type="text" [(ngModel)]="enteredSearchCity" (input)="onSearchCity()"
+            placeholder="Select your city">
+    </div>
+
+    <h3>OUR SERVICES</h3>
+    <hr class="my-line">
+
+    <div class="services">
+        <div class="details" *ngFor="let service of services">
+            <h4>{{service.title}}</h4>
+            <h5>{{service.subtitle}}</h5>
+            {{service.description}}
+        </div>
+    </div>
+</div>

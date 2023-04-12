@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+$grey-light: lighten(#888, 40%);
+$green: #3cba54;
+$white: #ffffff;
+$my-green: mix($green, $white, 70%);
+$white-transparent: rgba(255, 255, 255, 0.5);
+
+.header {
+    background-image: url('/assets/images/header.webp');
+    background-size: 80%;
+    background-size: cover;
+    border-radius: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 540px;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+p {
+    margin-top: 100px;
+    margin-bottom: -15px;
+}
+
+.my-line {
+    width: 50%;
+    margin-top: -15px;
+}
+
+h5 {
+    font-family: Smooch;
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+button {
+    border-radius: 5px;
+    margin-top: -10px;
+    border-color: transparent;
+    background-color: $white-transparent;
+}
+
+button:hover {
+    background-color: $my-green;
+}
+
+$grey-light: lighten(#888, 40%);
+$green: #3cba54;
+$white: #ffffff;
+$my-green: mix($green, $white, 70%);
+
+.card-list-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 50px;
+
+}
+
+.cards-container {
+    background-color: $grey-light;
+    margin: 100px;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pclass {
+    text-align: center;
+    color: $my-green ;
+}
+
+.my-line1 {
+    width: 50%;
+}

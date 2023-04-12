@@ -1,0 +1,16 @@
+<app-header [title]="title"></app-header>
+
+<app-search (searchCityEmitter)="onSearchCityEntered($event)"></app-search>
+
+<div class="cards-container">
+    <h3 class="pclass">MOST POPULAR</h3>
+    <hr class="my-line">
+
+    <div class="card-list-container">
+        <ng-container *ngFor="let card of cards">
+            <div *ngIf="searchCity === '' || card.title.toLowerCase().includes(searchCity)">
+                <app-card [card]="card" (changeTitleEvent)="getTitle($event)"></app-card>
+            </div>
+        </ng-container>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+$grey-light: lighten(#888, 40%);
+$green: #3cba54;
+$white: #ffffff;
+$my-green: mix($green, $white, 70%);
+
+.card-list-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 50px;
+
+}
+
+.cards-container {
+    background-color: $grey-light;
+    margin: 100px;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pclass {
+    text-align: center;
+    color: $my-green ;
+}
+
+.my-line {
+    width: 50%;
+}

@@ -1,0 +1,44 @@
+$grey-light: lighten(#888, 40%);
+$green: #3cba54;
+$white: #ffffff;
+$my-green: mix($green, $white, 70%);
+
+.search {
+    text-align: center;
+    color: $my-green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.my-line {
+    width: 50%;
+}
+
+.services {
+    color: black;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+
+    h4 {
+        color: $my-green;
+        margin-bottom: -15px;
+    }
+
+}
+
+h5 {
+    margin-bottom: 0px;
+}
+
+.input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #888;
+}
